@@ -49,7 +49,7 @@ interface ITransResult {
 }
 
 export async function retrieve(baseUrl: string) {
-  return getData<IRetrieveResult>(`${baseUrl}/retrieve`);
+  return getData<IRetrieveResult>(`${baseUrl}/retrieve?a=${Math.random()}`);
 }
 
 export async function store(baseUrl: string, num: number) {
